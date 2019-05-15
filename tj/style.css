@@ -256,7 +256,7 @@ section h2{
 	border:  solid 3px #FFF;
 	/* margin-left: 200px; */
 	text-align: center;
-  margin-left: 400px; 
+  /* margin-left: 400px; */ 
   /* margin-right: auto; */
 
 }
@@ -359,7 +359,7 @@ section h2{
       flex-direction: column;
       background-color: #f4f4f4;
       padding: 0;
-      margin: 0 10px 0  ;
+      margin: 0;
 
     }
     
