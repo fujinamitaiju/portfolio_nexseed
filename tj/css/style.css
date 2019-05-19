@@ -30,6 +30,7 @@ header{
   width: 40px;
   height: 30px;
   margin: 30px  10px;/*うえ　左右　した*/
+  z-index: 9999;
 }
 
 .hamburger span{
@@ -69,18 +70,18 @@ header{
 
 /* ホバー時×と表示 */
 
-.hamburger:hover span {
+.hamburger.active span {
  
-  background-color: transparent; /*transparent 透明*/
+  /* background-color: transparent; */ /*transparent 透明*/
 
 }
 
-.hamburger:hover span:before{
+.hamburger.active span:before{
   transform: rotate(45deg) translate(6px,6px);
   /*45度傾ける  座標 x,yで指定*/
 }
 
-.hamburger:hover span:after{
+.hamburger.active span:after{
   transform: rotate(-45deg) translate(8px,-10px);
 }
 
@@ -97,6 +98,49 @@ header{
   background-position: 1px 20px;
 
 }
+/* ナビゲーション */
+#navigation {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 99998; }
+
+#navigation .navigation_inner {
+  display: table;
+  width: 100%;
+  height: 100%; }
+
+#navigation .navigation_inner .navigation_menu {
+  display: table-cell;
+  vertical-align: middle; }
+
+#navigation .navigation_inner .navigation_menu .navigation_item {
+  width: 300px;
+  height: 40px;
+  margin: 16px auto 0 auto; }
+
+#navigation .navigation_inner .navigation_menu .navigation_item:first-child {
+  margin-top: 0; }
+
+#navigation .navigation_inner .navigation_menu .navigation_item a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: #333;
+  line-height: 40px;
+  text-align: center; }
+
+#navigation .navigation_inner .navigation_menu .navigation_item a:hover {
+  color: #bdbdbd; }
+
+  /*ナビゲーションここまで  */
+
+
 .icon{
    animation: fadeIn 5s ease;
 }
@@ -327,6 +371,9 @@ section h2{
       /* background-size: cover;
       background-position: center center; */
     }
+    #navigation .navigation_inner .navigation_menu .navigation_item a{
+      font-size: 2.0rem;
+    }
     .text-center{
       font-size: 1.8rem;
     }
@@ -339,6 +386,12 @@ section h2{
     }
     #passions p{
       font-size: 1.1rem;
+    }
+    #goal .prev{
+      font-size: 1.0rem;
+    }
+    #goal .next{
+     font-size: 1.0rem;
     }
     /* #goal .align-items{
       width: auto;
@@ -394,6 +447,24 @@ section h2{
       margin-right: 0;
       margin-top: 5px;
     }   
+    .slide-dots{
+      text-align: center;
+    }
+    .slide-dots li{
+      display: inline-block;
+    }
+    #goal botton{
+      margin: 0;
+      padding: 0;
+      background: none;
+      border: none;
+      border-radius: 0;
+      outline: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      position: relative;
+    }
 }
 
 

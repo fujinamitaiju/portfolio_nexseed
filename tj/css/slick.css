@@ -78,6 +78,8 @@
 {
     display: none;
     float: left;
+    transition: .3s ease;/*追加*/
+    transform: scale(.5);/*追加*/
 
     height: 100%;
     min-height: 1px;
@@ -116,4 +118,8 @@
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+.slick-current {
+  transform: scale(1);
 }
