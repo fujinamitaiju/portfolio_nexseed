@@ -11,7 +11,7 @@ html
 
 body
 {
-	font-family: 'Open Sans', Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+  font-family: 'Open Sans', Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
     font-size: 1.4rem; /* フォントサイズ */
     line-height: 1.6; /* 行間 */
     letter-spacing: .1em;　/* 文字間隔 */
@@ -22,26 +22,26 @@ body
 }
 
 header{
-	margin-bottom: 50px; 
+  margin-bottom: 50px; 
 }
 .hamburger{
-	position: fixed;
+  position: fixed;
 
-	width: 40px;
-	height: 30px;
-	margin: 30px  10px;/*うえ　左右　した*/
+  width: 40px;
+  height: 30px;
+  margin: 30px  10px;/*うえ　左右　した*/
 }
 
 .hamburger span{
-	position: relative;
-	display: block;
+  position: relative;
+  display: block;
 }
 
 .hamburger span:after,
 .hamburger span:before{
 
-	content: "";
-	position: absolute;
+  content: "";
+  position: absolute;
 
 }
 
@@ -49,21 +49,21 @@ header{
 .hamburger span:after,
 .hamburger span:before{
 
-	width: 100%;
-	height: 2px;
-	background-color: #333333;
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
    /*時間的変化のアニメーション*/
-	transition: all 0.5s ease; /* 0.5秒　推移*/
-	border-radius: 1px;
+  transition: all 0.5s ease; /* 0.5秒　推移*/
+  border-radius: 1px;
 
 
 }
 
 .hamburger span:before{
-	top: -11px;
+  top: -11px;
 }
 .hamburger span:after{
-	top: 11px;
+  top: 11px;
 }
 
 
@@ -76,25 +76,25 @@ header{
 }
 
 .hamburger:hover span:before{
-	transform: rotate(45deg) translate(6px,6px);
-	/*45度傾ける  座標 x,yで指定*/
+  transform: rotate(45deg) translate(6px,6px);
+  /*45度傾ける  座標 x,yで指定*/
 }
 
 .hamburger:hover span:after{
-	transform: rotate(-45deg) translate(8px,-10px);
+  transform: rotate(-45deg) translate(8px,-10px);
 }
 
 /* flex{
-	display: flex;
+  display: flex;
 } */
 .headerbg{
-	height: 600px;
-	background: url(../image/logo2.svg);
-	background-repeat: no-repeat; /*画像のrepeatを止める*/
-	background-position: center center;
-	background-size:cover; 
-	background-attachment: fixed; /*backgroundの画像を固定 */
-	background-position: 1px 20px;
+  height: 600px;
+  background: url(../../image/logo2.svg);
+  background-repeat: no-repeat; /*画像のrepeatを止める*/
+  background-position: center center;
+  background-size:cover; 
+  background-attachment: fixed; /*backgroundの画像を固定 */
+  background-position: 1px 20px;
 
 }
 .icon{
@@ -111,24 +111,24 @@ header{
 }
 
 .profile-icon{
-	position: relative;
-	text-align: center;
-	margin: 30px auto; 
+  position: relative;
+  text-align: center;
+  margin: 30px auto; 
 
-	animation: fadeIn 3s ease;
+  animation: fadeIn 3s ease;
 }
 
 @keyframes fadeIn {
-	0%{/*0%の時*/
-		opacity: 0;/*不透明度*/
-		top:100px;
+  0%{/*0%の時*/
+    opacity: 0;/*不透明度*/
+    top:100px;
 
-	}
-	100%{/*100％の時*/
-		opacity: 1;
-		top: 0;
+  }
+  100%{/*100％の時*/
+    opacity: 1;
+    top: 0;
 
-	}
+  }
 
 }
 
@@ -158,7 +158,7 @@ section h2{
 }
 
 #passions{
-	margin-top: 100px;
+  margin-top: 100px;
 }
   
 #passions .passions-box{
@@ -184,25 +184,36 @@ section h2{
   }
 
   #goal h2{
-   	margin-bottom: 30px;
+    margin-bottom: 100px;
    }
 
   #goal .flex{
-  	display: flex;
+    display: flex;
   }
-  #goal .align-items {
-  	height: 300px;
+  /* #goal .align-items  {
+    height: 300px;
     background-color: #ddd;
-  	flex-direction: column;
-  	align-items: center;
-  	justify-content: center;
-  	margin: 0 100px 200px; 
-  	border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 100px 200px; 
+    border-radius: 15px;
+  } */
+  
+  #goal .align-items div {
+    text-align: center;
+    /* box-sizing: border-box; */
+    /* margin: 25px 0; */
   }
-
-  #goal .align-items li {
-  	margin: 25px 0;
-
+  #goal .box-goal{
+    height: 100px;
+    align-items: center;
+  }
+  #goal .prev{
+    font-size: 2.0rem;
+  }
+  #goal .next{
+    font-size: 2.0rem;
   }
 
 #colleague{
@@ -211,24 +222,24 @@ section h2{
      
  }
  #colleague h2{
- 	 margin-bottom: 100px;
+   margin-bottom: 100px;
  }
   
 .form{
   display: flex;
   justify-content: center;
   flex-direction: column;
-	margin: auto;
-	width: 960px;
-	background-color: #eaeaea;
-	padding:  30px 50px;
-	/*4つ文字入れたら上右下左*/
-	font-size: 20px;
+  margin: auto;
+  width: 960px;
+  background-color: #eaeaea;
+  padding:  30px 50px;
+  /*4つ文字入れたら上右下左*/
+  font-size: 20px;
 }
 
 .label{
-	width: 120px;
-	margin-right: 80px;
+  width: 120px;
+  margin-right: 80px;
 }
 
 .input-field{
@@ -238,24 +249,24 @@ section h2{
 }
 
 .form-group{
-	display: flex;
+  display: flex;
   justify-content: center;
-	margin: 30px 0;
-	height: 40px;
-	align-items: center; /*フォームと文字を合わせるために使う*/
+  margin: 30px 0;
+  height: 40px;
+  align-items: center; /*フォームと文字を合わせるために使う*/
 }
 
 .button{
   /* position: relative; */
-	background-color: #009cd3;
-	color: #fff;
-	font-size: 20px;
-	width: 120px;
-	line-height: 50px;
-	border-radius: 5px;
-	border:  solid 3px #FFF;
-	/* margin-left: 200px; */
-	text-align: center;
+  background-color: #009cd3;
+  color: #fff;
+  font-size: 20px;
+  width: 120px;
+  line-height: 50px;
+  border-radius: 5px;
+  border:  solid 3px #FFF;
+  /* margin-left: 200px; */
+  text-align: center;
   /* margin-left: 400px; */ 
   /* margin-right: auto; */
 
@@ -263,14 +274,14 @@ section h2{
 
 
 #contact{
-	margin-top: 200px;
+  margin-top: 200px;
 
 }
 
-	#contact ul {
-	  text-align: center;
-	  margin-top: 60px; 
-	}
+  #contact ul {
+    text-align: center;
+    margin-top: 60px; 
+  }
   #contact ul li {
     display: inline-block;
     font-size: 2.8rem;
@@ -315,6 +326,435 @@ section h2{
       display: none;
       /* background-size: cover;
       background-position: center center; */
+    }
+    .text-center{
+      font-size: 1.8rem;
+    }
+    .block-center{ 
+      width: 150px;
+      height: 150px;
+    }
+    #passions h3{
+      font-size: 1.2rem;
+    }
+    #passions p{
+      font-size: 1.1rem;
+    }
+    /* #goal .align-items{
+      width: auto;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      background-color: #eaeaea;
+      margin: 0 10px 200px;
+    } */
+    #colleague h3{
+      font-size: 1.2rem;
+    }
+    #colleague p{
+      font-size: 1.1rem;
+    }
+    #contact{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 100px;
+    }
+    .form{
+      width: 100%;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      background-color: #f4f4f4;
+      padding: 0;
+      /* margin: 0 10px 0  */ ;
+
+    }
+    
+    #contact ul{
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+    }
+    .form-group{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center; 
+      font-size: 1.0rem;
+
+    } 
+    .form-group button{
+      margin-left: 0;
+    }
+    .form-group .label{
+      margin-right: 0;
+      margin-top: 5px;
+    }   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @charset "UTF-8";
+
+@import 'https://fonts.googleapis.com/css?family=Abel';
+
+
+html
+{
+    font-size: 62.5%; ベースとなるフォントサイズの定義
+    background-color: #F4F4F4;
+}
+
+body
+{
+  font-family: 'Open Sans', Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+    font-size: 1.4rem; フォントサイズ
+    line-height: 1.6; 行間
+    letter-spacing: .1em;　文字間隔
+}
+
+.text-center {
+  text-align: center; 
+}
+
+header{
+  margin-bottom: 50px; 
+}
+.hamburger{
+  position: fixed;
+
+  width: 40px;
+  height: 30px;
+  margin: 30px  10px;うえ　左右　した
+}
+
+.hamburger span{
+  position: relative;
+  display: block;
+}
+
+.hamburger span:after,
+.hamburger span:before{
+
+  content: "";
+  position: absolute;
+
+}
+
+.hamburger span,
+.hamburger span:after,
+.hamburger span:before{
+
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+   時間的変化のアニメーション
+  transition: all 0.5s ease; 0.5秒　推移
+  border-radius: 1px;
+
+
+}
+
+.hamburger span:before{
+  top: -11px;
+}
+.hamburger span:after{
+  top: 11px;
+}
+
+
+ホバー時×と表示
+
+.hamburger:hover span {
+ 
+  background-color: transparent; transparent 透明
+
+}
+
+.hamburger:hover span:before{
+  transform: rotate(45deg) translate(6px,6px);
+  45度傾ける  座標 x,yで指定
+}
+
+.hamburger:hover span:after{
+  transform: rotate(-45deg) translate(8px,-10px);
+}
+
+flex{
+  display: flex;
+}
+.headerbg {
+  background-attachment: fixed;
+  background-color: #fff;
+  height: 300px;
+  z-index: -1;
+
+}
+.headerbg img{
+  height: 200px;
+  width: 100%;
+  z-index: -1;
+  background: url(../image/logo2.svg);
+  background-repeat: no-repeat; 画像のrepeatを止める
+  background-position: center center;
+  background-size:cover; 
+  position: fixed;
+  background-attachment: fixed; backgroundの画像を固定
+  background-position: 1px 20px;
+
+}
+.icon{
+   animation: fadeIn 5s ease;
+   width: 100%;
+   height: 200px;
+   background-color: #fff;
+}
+.icon img{
+  height: 200px;
+  width: 100%;
+}
+main{
+  z-index: 10;
+  background-color: #fff;
+}
+
+.block-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.profile-icon{
+  position: relative;
+  text-align: center;
+  margin: 30px auto; 
+
+  animation: fadeIn 3s ease;
+}
+
+@keyframes fadeIn {
+  0%{0%の時
+    opacity: 0;不透明度
+    top:100px;
+
+  }
+  100%{100％の時
+    opacity: 1;
+    top: 0;
+
+  }
+
+}
+
+section h2 {
+    font-size: 3.2rem; 
+  }
+section   一括
+section {
+  padding: 60px 0; 
+
+}
+  section .container {
+    width: 90%;
+  }
+  section h2 {
+    font-size: 3.2rem; 
+}
+  
+  section .container{
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+section h2{
+    font-size: 3.2rem;section要素見出しを32pxで揃える
+}
+
+#passions{
+  margin-top: 100px;
+}
+  
+#passions .passions-box{
+    text-align: center;
+    margin: 30px 10px;
+    padding: 30px 0;
+ }
+#passions h3{
+    font-size: 2.2rem;
+    margin-top: 20px;
+ }
+#passions p{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+#passions .type{
+    color: #b2b2b2
+  }
+#passions .text{
+    margin-top: 20px;
+    padding: 40px 0;
+    font-size: 1.2rem;
+  }
+
+  #goal h2{
+     margin-bottom: 30px;
+   }
+
+  #goal .flex{
+    display: flex;
+  }
+  #goal .align-items {
+    height: 300px;
+    background-color: #ddd;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 100px 200px; 
+    border-radius: 15px;
+  }
+
+  #goal .align-items li {
+    margin: 25px 0;
+
+  }
+
+#colleague{
+   margin: auto; 
+   margin-top: 200px; 
+     
+ }
+ #colleague h2{
+    margin-bottom: 100px;
+ }
+  
+.form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  width: 960px;
+  background-color: #eaeaea;
+  padding:  30px 50px;
+  4つ文字入れたら上右下左
+  font-size: 20px;
+}
+
+.label{
+  width: 120px;
+  margin-right: 80px;
+}
+
+.input-field{
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.form-group{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  height: 40px;
+  align-items: center; フォームと文字を合わせるために使う
+}
+
+.button{
+  position: relative;
+  background-color: #009cd3;
+  color: #fff;
+  font-size: 20px;
+  width: 120px;
+  line-height: 50px;
+  border-radius: 5px;
+  border:  solid 3px #FFF;
+  margin-left: 200px;
+  text-align: center;
+  margin-left: 400px; 
+  margin-right: auto;
+
+}
+
+
+#contact{
+  margin-top: 200px;
+
+}
+
+  #contact ul {
+    text-align: center;
+    margin-top: 60px; 
+  }
+  #contact ul li {
+    display: inline-block;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-right: 20px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: top; 
+ }
+  #contact ul li:last-child {
+      margin-right: 0; 
+  }
+  #contact ul .github, #contact ul .twitter, #contact ul .instagram {
+    font-size: 3.2rem; 
+  }
+  #contact ul .github i {
+    margin-left: 2px;
+  }
+  #contact ul .twitter i {
+    margin-left: 2px; 
+  }  
+  #contact ul .instagram i {
+    margin-left: 3px;
+  }  
+  #contact ul a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    color: #FFF;
+    background-color: #000000;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+   }
+
+@media screen and (max-width: 768px){
+    .headerbg{
+      width: 100%;
+      display: none;
+      background-size: cover;
+      background-position: center center;
     }
     .text-center{
       font-size: 1.8rem;
@@ -383,4 +823,4 @@ section h2{
       margin-right: 0;
       margin-top: 5px;
     }   
-}
+} */
